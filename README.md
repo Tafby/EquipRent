@@ -1,2 +1,24 @@
-# EquipRent
-This app is intended to create a community for recreational equipment rentals.  We will need to create an inventory system of checkout and returned items. As well as a subscription price policy. 
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
