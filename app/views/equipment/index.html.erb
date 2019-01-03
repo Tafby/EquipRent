@@ -34,7 +34,10 @@
         </nav>
         <div class="col-4">
           <%=image_tag("longboard.jpg")%>
-
+          <% @items.each do |item| %>
+          <!-- html goes in here for item -->
+          <%= item.name %>
+          <% end %>
 
         </div>
         <div class="col-6">
