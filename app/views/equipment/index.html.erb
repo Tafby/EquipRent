@@ -36,7 +36,7 @@
           <%=image_tag("longboard.jpg")%>
           <% @items.each do |item| %>
           <!-- html goes in here for item -->
-          <%= item.name %>
+          <%= item.name.capitalize %>
           <% end %>
 
         </div>
@@ -46,7 +46,7 @@
           <p>
             <h3>Longboards</h3>
             <li>
-              5 dollars
+              $7 per hour
             </li>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
