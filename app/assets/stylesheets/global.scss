@@ -39,40 +39,18 @@ text-align: center;
 }
 /*END NAV CSS*/
 
-<<<<<<< HEAD
-
 /*FOOTER CSS*/
 
 footer {
+  position: absolute;
+ bottom: 0;
+ width: 100%;
   background: grey;
-  position:absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-family: arial;
-  margin-top: 20px;
-}
-.footerLinks {
-  text-align: center;
-}
 
-.footerLinks ul {
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
-}
-.footerLinks li {
-  display: inline;
-}
-.footerLinks a {
-  color: #d9d9d9;
-  text-decoration: none;
-  font-size: 13px;
 }
 
 /*END FOOTER CSS */
-=======
+
 /*EquipRent Signup Button*/
 .button {
   background-color: lightblue;
@@ -94,4 +72,3 @@ footer {
   text-decoration: none;
 }
 /* END EquipRent Signup Button*/
->>>>>>> d461c138d33504fff9eb675b7a545a4195a912a5
