@@ -2,7 +2,6 @@
 <div class="card">
   <div class="card-body">
     <div class="row">
-      <h1>Rentals</h1>
       <div class="col-4">
         <!-- <%=image_tag("longboard.jpg")%> -->
         <% @items.each do |item| %>
@@ -13,3 +12,20 @@
     </div>
   </div>
 </div>
+
+<!-- This is a test "user dashboard example -->
+<div class="card">
+  <div class="card-header">
+    Your Items
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Blue Longboard - Rented<br />
+      <%=image_tag("longboard.jpg")%>
+    </h5>
+    <p class="card-text">This item is due back by 1/29/19</p>
+    <a href="#" class="btn btn-primary">Item Details</a> <!--this button could open a page to the item
+      so user can edit pic, details, etc.-->
+  </div>
+</div>
+
+<!--  End test -->
