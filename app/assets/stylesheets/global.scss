@@ -43,10 +43,18 @@ text-align: center;
 
 footer {
   position: absolute;
- bottom: 0;
- width: 100%;
+  bottom: 0;
+  width: 100%;
   background: grey;
-
+}
+footer a {
+  color:black;
+  text-align: center;
+}
+footer a:hover {
+  text-decoration: none;
+  color: purple;
+  font-weight: none;
 }
 
 /*END FOOTER CSS */
