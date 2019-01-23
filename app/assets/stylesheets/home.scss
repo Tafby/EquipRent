@@ -2,11 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-//bg image and styling
-body {
-  background-image: image-url('green.jpg');
-  background-position: cover;
-  background-size: 100%;
-  
+
+
+
+//Practice home page design\\
+
+.home {
+  border-bottom: solid black 1px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  background-color: #F7F7F7;
 }
-//end bg image and styling
+.blurb{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: solid black 1px;
+}
+.color {
+  background-color: #D5FCFE;
+  padding-top: 300px;
+}
