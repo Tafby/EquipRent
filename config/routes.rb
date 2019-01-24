@@ -7,4 +7,9 @@ Rails.application.routes.draw do
   resources :sessions
   resources :equipment, only: :index
   resources :contact, only: :index
+  resources :dashboards
+  resources :listings
+  resources :payments
+  resources :accounts
+  resources :profiles
 end
