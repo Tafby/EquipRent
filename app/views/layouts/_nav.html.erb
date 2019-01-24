@@ -4,13 +4,14 @@
  <li><a href="/equipment/">Rentals</a></li>
     <!-- <li><a href="/contact/">Contact</a></li> -->
   </ul>
+  <div id="user_nav" class="navcenter">
+    <% if current_user %>
+      Logged in as <%= current_user.email %>
+      <%= link_to "Log out", logout_path %>
+    <% else %>
+      <li></li><%= link_to "Sign up", signup_path %> or
+      <%= link_to "log in", login_path %>
+    <% end %>
+  </div>
 </div>
-<div id="user_nav">
-  <% if current_user %>
-    Logged in as <%= current_user.email %>
-    <%= link_to "Log out", logout_path %>
-  <% else %>
-    <%= link_to "Sign up", signup_path %> or
-    <%= link_to "log in", login_path %>
-  <% end %>
-</div>
+<!-- Add a mr.auto to sign up/ login to be on the right hand corner -->
