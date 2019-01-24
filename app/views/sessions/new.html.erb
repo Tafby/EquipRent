@@ -1,13 +1,17 @@
 <h1>Log in</h1>
 
 <%= form_tag sessions_path do %>
-  <p>
+<div class="row justify-content-center">
+  <div class="col-sm-8 col-md-6 col-lg-4">
+  <div class="form-group">
     <%= label_tag :email %><br />
-    <%= text_field_tag :email, params[:email] %>
-  </p>
-  <p>
+    <%= text_field_tag :email, params[:email], class: "form-control" %>
+  </div>
+  <div class="form-group">
     <%= label_tag :password %><br />
-    <%= password_field_tag :password %>
-  </p>
-  <p class="button"><%= submit_tag "Log in" %></p>
+    <%= password_field_tag :password, "", class: "form-control" %>
+  </div>
+  <%= submit_tag "Log in", class: "btn btn-info btn-block" %>
+</div>
+</div>
 <% end %>
