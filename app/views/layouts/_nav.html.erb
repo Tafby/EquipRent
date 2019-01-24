@@ -3,14 +3,15 @@
 <li><a href="/">EquipRent</a></li>
  <li><a href="/equipment/">Rentals</a></li>
     <!-- <li><a href="/contact/">Contact</a></li> -->
-    <div id="user_nav">
-      <% if current_user %>
-      Logged in as <%= current_user.email %>
-      <%= link_to "Log out", log_out_path %>
-      <% else %>
-      <%= link_to "Sign Up", signups_path %>
-      <%= link_to "Log In", log_in_path %>
-      <% end %>
-    </div>
+
   </ul>
+  <div id="user_nav">
+    <% if current_user %>
+    Logged in as <%= current_user.email %>
+    <%= link_to "Log out", log_out_path %>
+    <% else %>
+    <%= link_to "Sign Up", signups_path %>
+    <%= link_to "Log In", log_in_path %>
+    <% end %>
+  </div>
 </div>
