@@ -41,9 +41,9 @@
   </div> -->
 
   <div class="container-fluid">
-   <% @items.each do |item| %>
+   <% @items.all.each do |item| %>
       <div class="card">
-      <%= image_tag(item.image_path) %>
+      <%= tag :img, src: item.image_path %>
       <div class="card-body">
        <div class="card-block">
         <p class="card-title">Item: <%= item.name %></p>
@@ -52,4 +52,5 @@
        </div>
      </div>
    <% end %>
+</div>
 </div>
