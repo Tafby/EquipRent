@@ -1,30 +1,55 @@
+<div class="row">
+  <div class="col home">
+    <h1 class="hometitle">Rentals</h1>
+  </div>
+</div>
+<!--
 <div class="card">
   <div class="card-body">
     <div class="row">
-      <h1>My Items</h1>
+      <h1>Rentals</h1>
       <div class="col-4">
-        <!-- <%=image_tag("longboard.jpg")%> -->
-        <% @items.each do |item| %>
-        <!-- html goes in here for item -->
-        <%= item.name.capitalize %>
-        <% end %>
       </div>
     </div>
   </div>
-</div>
-
-<!-- This is a test "user dashboard example -->
-<!-- <div class="card">
-  <div class="card-header">
-    Wheels
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Blue Longboard - Rented<br />
-      <%=image_tag("longboard.jpg")%>
-    </h5>
-    <p class="card-text">This item is due back by 1/29/19</p>
-    <a href="#" class="btn btn-primary">Item Details</a>
-  </div>
 </div> -->
+<div class="searchdiv"
+<form class="searchform">
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Search by item">
+    </div>
+    <div class="col-5">
+      <input type="text" class="form-control" placeholder="Search by city">
+    </div>
+    <div class="col">
+      <%= link_to "Search", root_url, class: "btn btn-info btn-block" %>
+    </div>
+  </div>
+</form>
+</div>
+<br>
 
-<!--  End test -->
+<!-- <div class="card-deck">
+  <div class="card">
+    <img src="images/longboard.jpg" class="card-img-top" alt="longboard">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div> -->
+
+  <div class="container-fluid">
+   <% @items.each do |item| %>
+      <div class="card">
+      <%= image_tag(item.image_path) %>
+      <div class="card-body">
+       <div class="card-block">
+        <p class="card-title">Item: <%= item.name %></p>
+        <p class="card-text"><%= item.description %></p>
+        <p class="card-text">Daily Rental Price $<%= item.price %></p>
+       </div>
+     </div>
+   <% end %>
+</div>
