@@ -1,4 +1,4 @@
-class ListingsController < ApplicationController
+class ListingsController < AccountsController
   def index
   end
 end
