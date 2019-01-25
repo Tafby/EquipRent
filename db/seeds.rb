@@ -13,7 +13,7 @@ user5 = User.create(firstname: "Paule", lastname: "Cornerstone", email: "user5@g
 user6 = User.create(firstname: "Steve", lastname: "Puff", email: "user6@gmail.com", password: "sixth", password_confirmation: "sixth", phone: "407-639-5555", address: "1000 Century Isle", city: "Renton", state: "Washington", zip: "98101")
 
 
-Item.create(user: user1, name: "Longboard", category: "water", price: 18.00, image_path: "longboard.jpg" description: "Longboard from Ron Jon's Surf Shop in Cocoa Beach.")
+Item.create(user: user1, name: "Longboard", category: "water", price: 18.00, image_path: "longboard.jpg", description: "Longboard from Ron Jon's Surf Shop in Cocoa Beach.")
 Item.create(user: user2, name: "Kayak", category: "water", price: 20.00, image_path: "kayak.jpg", description: "Sit on top kayak")
 Item.create(user: user3, name: "Snow Board", category: "snow", price: 25.00, image_path: "snowboard.jpg", description: "Learn how to board with this great brand")
 Item.create(user: user4, name: "Skis", category: "snow", price: 20.00, image_path: "skis.jpg", description: "Cross country")
