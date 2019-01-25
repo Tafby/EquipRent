@@ -23,12 +23,30 @@
 </div>
 <br>
 
+<<<<<<< HEAD
 <!-- This section  iterates through the items in the database using bootstrap-->
 <div class="row row_rentals">
   <% @items.all.each do |item| %>
   <div class="col-sm-4 py-2 col_rentals">
     <div class="card h-100" style="width: auto">
       <%= image_tag(item.image_path, height: 180, width: 351) %>
+=======
+<!-- <div class="card-deck">
+  <div class="card">
+    <img src="images/longboard.jpg" class="card-img-top" alt="longboard">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div> -->
+
+  <div class="container-fluid">
+   <% @items.all.each do |item| %>
+      <div class="card">
+        <%= image_tag(item.image_path, height: '100', width: '100') %>
+
+>>>>>>> bfa32f63f4afeaf25161b29db4c1df5a6a3004d1
       <div class="card-body">
         <p class="card-title">Item: <%= item.name %></p>
         <p class="card-text"><%= item.description %></p>
