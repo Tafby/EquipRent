@@ -43,7 +43,8 @@
   <div class="container-fluid">
    <% @items.all.each do |item| %>
       <div class="card">
-      <%= tag :img, src: item.image_path %>
+        <%= image_tag(item.image_path, height: '100', width: '100') %>
+
       <div class="card-body">
        <div class="card-block">
         <p class="card-title">Item: <%= item.name %></p>

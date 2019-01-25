@@ -16,19 +16,18 @@ p{
 }
 /*NAV CSS*/
 
-.navcenter{
-  list-style:none;
-  padding: 10px;
+.log_in_nav{
+  list-style: none;
   text-align: center;
   background-color: #F7F7F7;
   margin-bottom: 0;
 }
-.navcenter li{
+.log_in_nav li{
   display: inline;
-  padding: 30px;
+
 }
 /*css for the nav a tags*/
-.navcenter a{
+.log_in_nav a{
   display: inline-block;
   padding: none;
   color: black;
@@ -37,33 +36,41 @@ p{
 }
 
 /*what color the nav buttons change when hovering*/
-.navcenter a:hover{
+.log_in_nav a:hover{
   color: purple;
   text-decoration: none;
   font-weight: none;
 }
-.naccenter li a:hover {
+.log_in_nav li a:hover {
     border-bottom: 3px solid;
 }
 
 /*END NAV CSS*/
 
-/*FOOTER CSS*/
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: grey;
-}
-footer a {
-  color:black;
-  text-align: center;
-}
-footer a:hover {
-  text-decoration: none;
-  color: purple;
-  font-weight: none;
+.logged_in /* this is for the logged in as @current_user*/ {
+  font-size: 12px;
+  text-align: right;
 }
 
-/*END FOOTER CSS */
+//Practice home page design\\
+.hometitle{
+  font-family: 'Londrina Outline', cursive;
+  font-size: 100px;
+}
+.home {
+  border-bottom: solid black 1px;
+  padding-top: 5px;
+  background-color: #F7F7F7;
+}
+
+.blurb{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: solid black 1px;
+}
+.color {
+  background-color: #D5FCFE;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: solid black 1px;
+}
