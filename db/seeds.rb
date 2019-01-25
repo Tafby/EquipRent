@@ -14,8 +14,8 @@ user6 = User.create(firstname: "Steve", lastname: "Puff", email: "user6@gmail.co
 
 
 
-Item.create(user_id: user2, name: "kayak", category: "water", price: 20.00, description: "Sit on top kayak")
-Item.create(user_id: user3, name: "snow board", category: "snow", price: 25.00, description: "Learn how to board with this great brand")
-Item.create(user_id: user4, name: "ski", category: "snow", price: 20.00, description: "Cross country")
-Item.create(user_id: user5, name: "tennis racket", category: "rackets", price: 7.00, description: "Yonex Ezone 98")
-Item.create(user_id: user6, name: "roller blades", category: "wheels", price: 9.00, description: "Good for your butt")
+Item.create(user: user2, name: "kayak", category: "water", price: 20.00, description: "Sit on top kayak")
+Item.create(user: user3, name: "snow board", category: "snow", price: 25.00, description: "Learn how to board with this great brand")
+Item.create(user: user4, name: "ski", category: "snow", price: 20.00, description: "Cross country")
+Item.create(user: user5, name: "tennis racket", category: "rackets", price: 7.00, description: "Yonex Ezone 98")
+Item.create(user: user6, name: "roller blades", category: "wheels", price: 9.00, description: "Good for your butt")
